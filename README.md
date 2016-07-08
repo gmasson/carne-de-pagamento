@@ -1,2 +1,2 @@
-# carne
-Gerador de Carnê Open Source
+# Carnê de Pagamento Open Source
+Gerador de Carnê desenvolvido em PHP
