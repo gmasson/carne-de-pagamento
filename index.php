@@ -75,7 +75,7 @@
             </div>
             <div class="form-group">
               <label>Quantidade de Parcelas</label>
-              <input name="qtd" type="number" class="form-control" value="10" required>
+              <input name="qtd" type="number" class="form-control" value="10" max="212" required>
             </div>
             <div class="form-group">
               <label>Dia de Vencimento</label>

@@ -17,6 +17,7 @@ if (!$_POST['primeiroano']) { $primeiro_ano = ""; } else { $primeiro_ano = addsl
 
 $hoje = date("d/m/Y");
 
+if ($qtd >= 212) { header("Location: index.php?error=qtd_limite") }
 ?>
 <!DOCTYPE HTML>
 <!-- SPACES 2 -->
