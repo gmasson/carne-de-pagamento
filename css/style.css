@@ -60,7 +60,6 @@ a {
   cursor: pointer;
   background: green;
 }
-@media print { .bto { display: none; } }
 
 table td {
   padding: 5px 12px;
@@ -84,10 +83,16 @@ table, table tr { margin: 0; padding: 0; }
 
 .text-center { text-align: center; }
 
-.nome {
+.nome { /* Nome no carnê */
   padding-top: 2%;
   font-size: .7em;
 }
+
+@media print {
+  .bto { display: none; }
+  .quebra-pagina { page-break-after: always; }
+}
+
 
 /* ------------------------------------ */
 

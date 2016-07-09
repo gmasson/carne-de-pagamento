@@ -123,13 +123,17 @@ while ($count <= $qtd) {
     </div>
   </div>";
 
+  if (!$count_quebra_pg) { $count_quebra_pg = 0; } // Preenche Variavel
+  $count_quebra_pg++; // contagem de loop
+  if ($count_quebra_pg == 4) { // Adiciona quebra a cada 4 loops e zera a variavel
+    echo "<div class=\"quebra-pagina\">1</div>";
+    $count_quebra_pg = 0;
+  }
+
   $count++;
 }
 
 ?>
-
-
-
 
   </body>
 </html>
