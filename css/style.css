@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+}
+a {
+  padding: 8px;
+}
+
+.grid {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+.grid:before,
+.grid:after { content: ""; }
+.grid:after { clear: both; }
+
+.grid > div[class*="col"],
+.grid > div[class*="size"],
+.grid > div[class*="w"],
+.grid > div[class*="px"] {
+  float: left;
+  vertical-align: middle;
+}
+
+.col12 { width: 100%; }
+.col12-pad { width: 98%; padding: 1%; }
+.col11 { width: 91.66%; }
+.col11-pad { width: 89.66%; padding: 1%; }
+.col10 { width: 83.33%; }
+.col10-pad { width: 81.33%; padding: 1%; }
+.col9 { width: 75%; }
+.col9-pad { width: 73%; padding: 1%; }
+.col8 { width: 66.66%; }
+.col8-pad { width: 64.66%; padding: 1%; }
+.col7 { width: 58.33%; }
+.col7-pad { width: 56.33%; padding: 1%; }
+.col6 { width: 50%; }
+.col6-pad { width: 48%; padding: 1%; }
+.col5 { width: 41.66%; }
+.col5-pad { width: 39.66%; padding: 1%; }
+.col4 { width: 33.33%; }
+.col4-pad { width: 31.33%; padding: 1%; }
+.col3 { width: 25%; }
+.col3-pad { width: 23%; padding: 1%; }
+.col2 { width: 16.66%; }
+.col2-pad { width: 14.66%; padding: 1%; }
+.col1 { width: 8.333%; }
+.col1-pad { width: 6.333%; padding: 1%; }
+
+.bto {
+  padding: 1%;
+  background: #ddd;
+  margin-bottom: 1%;
+}
+.bto button {
+  padding: 9px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  background: green;
+}
+@media print { .bto { display: none; } }
+
+table td {
+  padding: 5px 12px;
+  margin: 0;
+  border-top: 1px solid #333;
+}
+table, table tr { margin: 0; padding: 0; }
+
+.parcela {
+  padding: 1% 0 1% 2%;
+  margin: .8% 0;
+  border-bottom: 1px dashed #333;
+  font-size: .9em;
+}
+
+.destaca {
+  padding-right: 3%;
+  margin-right: 3%;
+  border-right: 1px dashed #333;
+}
+
+.text-center { text-align: center; }
+
+.nome {
+  padding-top: 2%;
+  font-size: .7em;
+}
+
+/* ------------------------------------ */
+
+.capa {
+  height: 190px;
+  width: 96%;
+  padding: 2%;
+  border-top: 1px dashed #333;
+  border-bottom: 1px dashed #333;
+  font-size: 1.1em;
+  margin-top: 7%;
+}
+
+.capa img {
+  max-width: 100%;
+  height: 180px;
+}
