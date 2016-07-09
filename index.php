@@ -44,7 +44,7 @@
             </div>
             <div class="form-group">
               <label>Telefone</label>
-              <input name="tel_empresa" type="text" class="form-control" value="(19) 0000-0000">
+              <input name="tel_empresa" type="text" class="form-control" value="(00) 0000-0000">
             </div>
             <div class="form-group">
               <label>URL do Logotipo <small>* para capa do carnê</small></label>
