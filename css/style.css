@@ -1,9 +1,4 @@
-body {
-  margin: 0;
-}
-a {
-  padding: 8px;
-}
+body { margin: 0; }
 
 .grid {
   width: 100%;
@@ -50,15 +45,25 @@ a {
 
 .bto {
   padding: 1%;
-  background: #ddd;
+  background: #dedede;
   margin-bottom: 1%;
+  border-bottom: 1px solid #ccc;
 }
+.bto a,
 .bto button {
   padding: 9px;
-  color: #fff;
   border: 0;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+}
+.bto .btn-impress {
+  color: #fff;
   background: green;
+}
+.bto .btn {
+  color: #555;
+  background: transparent;
 }
 
 table td {
@@ -69,8 +74,8 @@ table td {
 table, table tr { margin: 0; padding: 0; }
 
 .parcela {
-  padding: 1% 0 1% 2%;
-  margin: .8% 0;
+  padding: 2% 0 2% 2%;
+  border-top: 1px dashed #333;
   border-bottom: 1px dashed #333;
   font-size: .9em;
 }
@@ -87,6 +92,7 @@ table, table tr { margin: 0; padding: 0; }
   padding-top: 2%;
   font-size: .7em;
 }
+
 
 @media print {
   .bto { display: none; }

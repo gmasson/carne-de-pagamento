@@ -25,7 +25,7 @@ if (!$_GET['logo']) { $logo = ""; } else { $logo = addslashes($_GET['logo']); }
     Ao Imprimir o carnê certifique-se se a impressão está ajustada à página
     <br>
     <br>
-    <button onclick="window.print()">IMPRIMIR CAPA DO CARNÊ</button>
+    <button class="btn-impress" onclick="window.print()">Imprimir</button>
   </div>
 
   <div class="capa">

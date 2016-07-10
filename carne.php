@@ -39,9 +39,13 @@ if ($qtd > 212) { header("Location: index.php?error=qtd_limite"); }
     Ao Imprimir o carnê certifique-se se a impressão está ajustada à página
     <br>
     <br>
-    <button onclick="window.print()">IMPRIMIR CARNÊ</button>
+    <button class="btn-impress" onclick="window.print()">Imprimir</button>
     &nbsp;
-    <?php echo "<a href=\"capa.php?endereco={$endereco_empresa}&tel={$tel_empresa}&logo={$logo}\" target=\"_blank\">IMPRIMIR CAPA DO CARNE</a>"; ?>
+    <?php echo "<a href=\"capa.php?endereco={$endereco_empresa}&tel={$tel_empresa}&logo={$logo}\" class=\"btn\" target=\"_blank\">
+      Capa do carnê
+    </a>"; ?>
+    &nbsp;
+    <button class="btn" onclick="window.history.back()">Voltar ao formulário</button>
   </div>
 
 <?php
@@ -70,15 +74,19 @@ while ($count <= $qtd) {
                 <small>Parcela</small>
                 <br>{$count} / {$qtd}
               </td>
+            <td>
+              <small>Valor</small>
+              <br>{$valor}
+            </td>
             </tr>
             <tr>
-              <td>
+              <td colspan=\"2\">
                 <small>Vencimento</small>
                 <br>{$vence}/{$mes_vence}/{$ano_vence}
               </td>
             </tr>
             <tr>
-              <td>
+              <td colspan=\"2\">
                 <small>Observações</small>
                 <br><br><br><br>
               </td>
@@ -97,23 +105,27 @@ while ($count <= $qtd) {
               <small>Parcela</small>
               <br>{$count} / {$qtd}
             </td>
+            <td>
+              <small>Valor</small>
+              <br>{$valor}
+            </td>
           </tr>
           <tr>
-            <td class=\"text-center\">
+            <td>
               <small>Data do Documento</small>
               <br>{$hoje}
             </td>
-            <td class=\"text-center\">
+            <td>
               <small>Tipo de Documento</small>
               <br>Carnê
             </td>
-            <td>
+            <td colspan=\"2\">
               <small>Vencimento</small>
               <br>{$vence}/{$mes_vence}/{$ano_vence}
             </td>
           </tr>
           <tr>
-            <td colspan=\"3\">
+            <td colspan=\"4\">
               <small>Todas as informações deste carnê são de responsabilidade do cedente</small>
               <br>{$obs}
             </td>
